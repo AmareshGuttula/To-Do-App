@@ -1,16 +1,31 @@
-# React + Vite
+# ✅ To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Task management web application built with **React** and **Vite**
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-blue)
+![Vite](https://img.shields.io/badge/Vite-fast-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple, fast, and modern **To-Do application** for managing daily tasks.  
+Built to practice modern React patterns, routing, and clean UI development.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add and manage tasks
+- Mark tasks as completed
+- Client-side routing with React Router
+- Fast development with Vite + HMR
+- Clean and minimal user interface
+- Modern icons using lucide-react
+- ESLint configured with React Hooks best practices
 
-## Expanding the ESLint configuration
+## More Info
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Built with **React 19** and **Vite**
+- Uses **React Router DOM** for navigation
+- Optimized for fast development and production builds
+- Easy to extend and customize
+
+## License
+
+This project is licensed under the MIT License.
