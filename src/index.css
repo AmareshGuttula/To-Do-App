@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Purple Theme Palette */
+  --primary: #9747FF;
+  --primary-light: #F3E8FF;
+  --primary-dark: #6B21A8;
+  --bg-color: #F8F0FF;
+  --card-bg: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --success: #10B981;
+  --danger: #EF4444;
+
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Utilities */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Component Styles */
+
+/* App Container Layout */
+.app-layout {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Home Page Specifics */
+.home-header {
+  background-color: var(--primary);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-date {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.add-btn-small {
+  background-color: white;
+  color: var(--primary);
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Date Strip */
+.date-strip-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.date-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 12px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.2s;
+}
+
+.date-card.active {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.date-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.date-mon {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Content Area */
+.home-content {
+  padding: 1.5rem;
+}/* Activity Page Styles */
+.page-activity {
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.calendar-week-mock {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background: white;
+    /* or clean */
+}
+
+.week-item {
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+.week-item.active {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 4px 10px rgba(151, 71, 255, 0.3);
+}
+
+.category-card {
+    background-color: #f9f9f9;
+    /* Subtle card bg from design */
+    border-radius: 16px;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.category-card:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+}
+
+.cat-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    /* Squircle as per design */
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(151, 71, 255, 0.3);
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+}
+
+.fab-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(151, 71, 255, 0.4);
+}/* Create Task Page */
+.page-create {
+    padding: 1.5rem;
+    background-color: #f9f9fb;
+    /* Slightly off-white */
+    min-height: 100vh;
+}
+
+.calendar-widget {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.cal-header {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background-color: #222;
+    color: white;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.cal-day-label {
+    font-size: 0.75rem;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+}
+
+.cal-day {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cal-day.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.cal-day.faded {
+    color: #D1D5DB;
+}
+
+.category-dropdown {
+    background: #f3e8ff;
+    /* Light purple tint */
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+.input-group {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    border: 1px solid #E5E7EB;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: #9CA3AF;
+    margin-bottom: 2px;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1rem;
+    color: var(--text-primary);
+    background: transparent;
+}
+
+.create-btn-main {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    box-shadow: 0 8px 20px rgba(151, 71, 255, 0.3);
+}
+
+.create-btn-main:hover {
+    background-color: var(--primary-dark);
+}
