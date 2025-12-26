@@ -25,6 +25,7 @@ Built to practice modern React patterns, routing, and clean UI development.
 - Uses **React Router DOM** for navigation
 - Optimized for fast development and production builds
 - Easy to extend and customize
+- -
 
 ## License
 
