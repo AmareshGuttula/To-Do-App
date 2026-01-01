@@ -19,6 +19,7 @@ Built to practice modern React patterns, routing, and clean UI development.
 - Modern icons using lucide-react
 - ESLint configured with React Hooks best practices
 
+
 ## More Info
 
 - Built with **React 19** and **Vite**
