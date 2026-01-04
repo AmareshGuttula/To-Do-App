@@ -28,6 +28,7 @@ Built to practice modern React patterns, routing, and clean UI development.
 - Easy to extend and customize
 - -
 
+
 ## License
 
 This project is licensed under the MIT License.
